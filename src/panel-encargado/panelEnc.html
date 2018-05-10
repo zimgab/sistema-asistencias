@@ -1,0 +1,136 @@
+      
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Asistencias</title>
+    <link rel="icon" href="../../images/logo.jpg" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style media="screen">
+      main {
+        min-height: 100vh;
+        background-color: #eee;
+      }
+
+      h5 {
+        font-size: 22px;
+        margin: 1em 0;
+      }
+
+      .img-collapsible {
+        height: 30px;
+        position: relative;
+        top: 8px;
+        margin-right: 8px;
+      }
+    </style>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+
+    <header>
+      <nav class="nav-extended indigo darken-4">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center hide-on-small-only">4º Grupo de Jóvenes</a>
+          <a href="#" class="brand-logo center show-on-small hide-on-large-only">4º de Jóvenes</a>
+          <ul id="nav-mobile" class="right">
+            <li><a class='dropdown-button btn indigo darken-1 boton-perfil' href="#" data-activates='dropdown1'
+              style="padding: 0; margin: 0">Encargado</a></li>
+          </ul>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="config_perfil_enc.html">Perfil</a></li>
+            <li><a href="logEncargado.html" id="cerrar">Salir</a></li>
+          </ul>
+          
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="fixed-action-btn horizontal">
+        <a href="altaJov.html" class="btn-floating btn-large cyan accent-4">
+          <i class="large material-icons">add</i>
+        </a>
+      </div>
+      <div class="container">
+        <div id="test3" class="">
+          <div class="row">
+            <div class="col s12 m10 l10">
+              <form>
+                <div class="card input-field" style="margin-top: 0">
+                  <input id="search" type="search" class="autocomplete" name="buscar" required style="background-image: url('../../images/icono_busqueda.png');
+                          background-repeat: no-repeat;
+                          background-position: right;
+                          background-size: 30px;">                                  
+                </div>
+              </form>
+            </div>
+            <div class="col m2 l2 right-align hide-on-med-and-down">
+              <a class="btn-floating waves-effect waves-light indigo darken-4"><i class="material-icons">sort_by_alpha</i></a>
+              <a class="btn-floating waves-effect waves-light indigo darken-4"><i class="material-icons">format_list_numbered</i></a>
+            </div>
+          </div>
+          <ul id="lista" class="collapsible" data-collapsible="accordion">
+           
+            <li>
+              <div class="collapsible-header">               
+                  <a href="datosjoven.html">
+                    <img class="circle img-collapsible" src="../../images/jovenes/sinfoto.jpg" alt="imagen joven">
+                  </a>                
+                <span>Asareel Mata Guadarrama</span>
+                <span class="badge hide-on-small-only">12</span>
+              </div>
+              <div class="collapsible-body">
+                <p><b>Correo Electrónico:</b> asareelmataguadarrama@gmail.com</p>
+                <p><b>Teléfono:</b> 3312986745</p>
+                <p><b>Edad:</b> 21</p>
+                <p><b>Domicilio:</b> Calzada Dr. Samuel Joaquín #3337 Int. 1</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <a href="datosjoven.html">
+                  <img class="circle img-collapsible" src="../../images/jovenes/sinfoto.jpg" alt="imagen joven">
+                </a>
+                 <span>Asareel Mata Guadarrama</span>
+                <span class="badge hide-on-small-only">12</span>
+              </div>
+              <div class="collapsible-body">
+                <p><b>Correo Electrónico:</b> asareelmataguadarrama@gmail.com</p>
+                <p><b>Teléfono:</b> 3312986745</p>
+                <p><b>Edad:</b> 21</p>
+                <p><b>Domicilio:</b> Calzada Dr. Samuel Joaquín #3337 Int. 1</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <a href="datosjoven.html">
+                  <img class="circle img-collapsible" src="../../images/jovenes/sinfoto.jpg" alt="imagen joven">
+                </a>
+                <span>Asareel Mata Guadarrama</span>
+                <span class="badge hide-on-small-only">12</span>
+              </div>
+              <div class="collapsible-body">
+                
+                <p><b>Correo Electrónico:</b> asareelmataguadarrama@gmail.com</p>
+                <p><b>Teléfono:</b> 3312986745</p>
+                <p><b>Edad:</b> 21</p>
+                <p><b>Domicilio:</b> Calzada Dr. Samuel Joaquín #3337 Int. 1</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    <script type="text/javascript" src="../../js/listajoven.js"></script>
+  </body>
+</html>

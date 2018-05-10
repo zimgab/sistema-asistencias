@@ -1,0 +1,14 @@
+
+	<script type="text/javascript" src="../../js/push.min.js"></script>
+
+
+<script>
+	Push.create("Nueva notificacion",{
+		body: "Este es el cuerpo de la notificacion",
+		icon: "../../images/notificaciones.png",
+		onClick: function(){
+			window.location="url";
+			this.close();
+		}
+	});
+</script>	

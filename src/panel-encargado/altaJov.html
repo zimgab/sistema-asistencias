@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Altas</title>
+    <!--Import Google Icon Font-->
+    <link rel="icon" href="../../images/logo.jpg" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style media="screen">
+      main {
+        min-height: 100vh;
+        background-color: #eee;
+      }
+
+      h5 {
+        font-size: 22px;
+        margin: 1em 0;
+      }
+
+      .img-collapsible {
+        height: 30px;
+        position: relative;
+        top: 8px;
+        margin-right: 8px;
+      }
+
+      .card {
+        padding: 1.4em 2.4em;
+        margin-bottom: 0;
+      }
+
+      .input-field {
+        margin: 0;
+      }
+    </style>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body >
+
+    <header>
+      <nav class="nav-extended indigo darken-4">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center hide-on-small-only">4º Grupo de Jóvenes</a>
+          <a href="#" class="brand-logo center show-on-small hide-on-large-only">4º de Jóvenes</a>
+          <a href="panelEnc.html" class="left" style="margin-left: 18px"><i class="material-icons">arrow_back</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="logEncargado.html">Salir</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="fixed-action-btn horizontal">
+        <a href="panelEnc.html" class="btn-floating btn-large cyan accent-4">
+          <i class="large material-icons">home</i>
+        </a>
+      </div>
+      <div class="container">
+        <div class="card">
+          <h5>Panel de altas</h5>
+          <p>Introduzca un correo generar la contraseña del nuevo usuario</p>
+          <form>
+            <div class="row">
+              <div class="input-field col s12 m4 l4">
+                <input id="email" type="email" name="email" class="validate">
+                <label for="email" data-error="Introduce un mail válido" data-success="Correcto">Ingrese el correo</label>
+              </div>
+              
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m4 l4 hide">
+                    <input  id="password" name ="pass" type="text" >
+                    <label for="password">Contraseña</label>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <!--a href="altaJov.php" class="waves-effect waves-light btn indigo darken-4" name="generarPW">Generar contraseña</a-->
+
+                <button class="btn waves-effect waves-light indigo darken-4" type="submit" name="boton">Generar</button> <br> <br>
+               </form>
+              </div>
+         
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <form>
+                <div class="input-field" style="margin-top: 0">
+                  <input  id="search" type="search" class="autocomplete" name="buscar" required style="background-image: url('../../images/icono_busqueda.png');
+                          background-repeat: no-repeat;
+                          background-position: right;
+                          background-size: 30px;">
+                                
+                </div>
+              </form>
+            </div>
+            <!--div class="col m2 l2 right-align hide-on-med-and-down">
+              <a class="btn-floating waves-effect waves-light indigo darken-4"><i class="material-icons">sort_by_alpha</i></a>
+              <a class="btn-floating waves-effect waves-light indigo darken-4"><i class="material-icons">format_list_numbered</i></a>
+            </div-->
+          </div>
+
+          <ul id="lista" class="collapsible" data-collapsible="accordion">
+            <li id="new-item" style="display: none" class="">
+              <div class="collapsible-header">
+                <span>rodriguez.uzi@gmail.com</span>
+              </div>
+              <div class="collapsible-body">
+                <span>Contraseña: ASJH877</span>                
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <span>asareelmataguadarrama@gmail.com</span>  
+                <span class="badge hide-on-small-only">
+                  <a class="waves-effect waves-light btn-small"><i class="material-icons">delete</i></a>
+                </span>              
+              </div>
+              <div class="collapsible-body">
+                <span><b>Contraseña:</b> 9%asH8779as9(k%</span><br>
+                <span>
+                    <a class="waves-effect waves-light btn-small hide-on-large-only"><i class="material-icons">delete</i></a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <span>zimram026@gmail.com</span>
+                <span class="badge hide-on-small-only">
+                  <a class="waves-effect waves-light btn-small"><i class="material-icons">delete</i></a>
+                </span>  
+              </div>
+              <div class="collapsible-body">
+                <span>Contraseña: JHas77fssas9(k%</span><br>
+                <span>
+                    <a class="waves-effect waves-light btn-small hide-on-large-only"><i class="material-icons">delete</i></a>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </main>
+
+    <script type="text/javascript"  src="../../js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+  </body>
+</html>

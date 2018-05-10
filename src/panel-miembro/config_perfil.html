@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Editar perfil</title>
+    <!--Import Google Icon Font-->
+    <link rel="icon" href="../../images/logo.jpg" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style media="screen">
+      main {
+        min-height: 100vh;
+        background-color: #eee;
+      }
+
+      h5 {
+        font-size: 22px;
+        margin: 1em 0;
+      }
+
+      .img-collapsible {
+        height: 30px;
+        position: relative;
+        top: 8px;
+        margin-right: 8px;
+      }
+
+      .card {
+        padding: 1.4em 2.4em;
+        margin-bottom: 0;
+      }
+
+      .input-field {
+        margin: 0;
+      }
+      .container .row .tam{
+        padding: 5px 5px;
+      }
+      .container .row .card{
+        cursor: pointer; 
+      }
+      .card .row .m-puntero a{
+        cursor: pointer; 
+      }
+    
+      .container .row p{
+        text-align: center;
+        width: 100%;
+      }
+      /*posicion de la imagen*/
+      .imagen-perfil{
+        margin-left: 10px;
+      }
+      .contenidos-perfil{
+        padding: 25px 50px;
+      }
+      .contenidos-perfil .img{
+        padding-left: 20%;
+        height: 250px;
+      }
+    </style>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body >
+
+    <header>
+      <nav class="nav-extended indigo darken-4">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center hide-on-small-only">4º Grupo de Jóvenes</a>
+          <a href="#" class="brand-logo center show-on-small hide-on-large-only">4º de Jóvenes</a>
+          <a href="panelJov.html" class="left" style="margin-left: 18px"><i class="material-icons">arrow_back</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="../../index.html">Salir</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="card hide-on-small-only">
+          <div class="row">
+            <div class="col s12 m12 l4" style="height: calc(100vh - 70px); background-color:#eee">
+              <div class="row">
+                <div class="col s12 m12 l12">
+                  <a id="datos-personales">
+                    <div class="card  tam">                                             
+                        <p>Datos personales</p>                     
+                   </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m12 l12">
+                  <a id="cambio-pass">
+                    <div class="card tam">                                             
+                        <p>Cambiar contraseña</p>                     
+                   </div>
+                  </a>
+                </div>
+              </div>
+               <div class="row">
+                <div class="col s12 m12 l12">
+                  <a id="cambio-laboral">
+                    <div class="card  tam">                                             
+                        <p>Información laboral</p>                     
+                   </div>
+                  </a>
+                </div>
+              </div>
+               <div class="row">
+                <div class="col s12 m12 l12">
+                  <a id="cambio-academico">
+                    <div class="card tam">                                             
+                        <p>Información académica</p>                     
+                   </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m12 l12">
+                  <a id="cambio-oraciones">
+                    <div class="card tam">                                             
+                        <p>Actividades religiosas</p>                     
+                   </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m12 l12">
+                  <a id="notificaciones">
+                    <div class="card tam">                                             
+                        <p>Notificaciones <span class="new badge red" style="margin-right: 50px">4</span></p>                     
+                   </div>
+                  </a>
+                </div>
+              </div>              
+            </div>              
+            <div class="col s12 m12 l8 colegios-content" style="height: calc(100vh - 70px); overflow:hidden">
+              <div id="contenidos" class="contenidos-perfil">                            
+              <img src="../../images/perfil.png" alt="imagen perfil" class="img">
+              </div>
+            </div>             
+          </div>
+        </div>         
+      </div>
+      <div class="card hide-on-large-only">
+            <div class="row">
+              <div class="col s12 m-puntero">
+                <h5>Cuenta</h5>
+                <a id="load-personal">Datos personales</a>
+                <div id="personal-movil"></div><br>
+                <a id="load-contra">Cambiar contraseña</a>
+                <div id="contra-movil"></div><br>
+                <a id="load-laboral">Información laboral</a>
+                <div id="laboral-movil"></div><br>
+                <a id="load-academia">Información académica</a>
+                <div id="academia-movil"></div><br>
+                <a id="load-religiosa">Actividades religiosas</a>
+               <div id="religiosa-movil"></div><br>
+               <a id="load-notificaciones">Notificaciones<span class="new badge red" style="margin-right: 50px">4</span></a>
+               <div id="notificaciones-movil"></div><br>
+              </div>
+            </div>
+      </div>        
+    </div>
+  </main>
+
+    <script type="text/javascript"  src="../../js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../../js/datos-mod-perfil.js"></script>  
+  </body>
+</html>

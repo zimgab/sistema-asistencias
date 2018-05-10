@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Asistencias</title>
+    <link rel="icon" href="images/logo.jpg" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style media="screen">
+      main {
+        min-height: 100vh;
+        background-color: #eee;
+      }
+
+      .card {
+        padding: 1.4em 2.4em;
+        margin-bottom: 0;
+      }
+
+      h5 {
+        font-size: 22px;
+        margin: 1em 0;
+      }
+
+      footer img {
+        margin-left: 4px;
+        height: 12px;
+      }
+
+      #form-container {
+        background-color: #fff;
+      }
+
+      .pre-alignment {
+        position: absolute;
+        top: calc(50vh - 29px);
+        left: calc(50vw - 29px);
+      }
+
+      .opacity {
+        opacity: 0.6;
+      }
+
+      .succes-dialog {
+        z-index: 100;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        padding-top: calc(50vh - 29px);
+      }
+
+      .circle-asist {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 0 2px;
+      }
+
+      .chart {
+        width: 100%; 
+        min-height: 450px;
+      }
+
+    </style>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  </head>
+  <body>
+
+    <header>
+      <nav class="nav-extended indigo darken-4">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center hide-on-small-only">4º Grupo de Jóvenes</a>
+          <a href="#" class="brand-logo center show-on-small hide-on-large-only">4º de Jóvenes</a>          
+          <a href="panelJov.html" class="left" style="margin-left: 18px"><i class="material-icons">arrow_back</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Salir</a></li>
+          </ul>          
+        </div>
+        
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="card">
+        <div class="row">
+          <h3>Buscar asistencias  por fecha </h3>          
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s4">
+                  <i class="material-icons prefix hide-on-small-only">event</i>
+                  <input id="icon_prefix" type="text" class="datepicker validate" placeholder="d/m/a" name="fechainicio">
+                  <label for="icon_prefix">Fecha inicio</label>
+                </div>
+                <div class="input-field col s4">
+                  <i class="material-icons prefix hide-on-small-only">date_range</i>
+                  <input id="icon_telephone" type="text" class="datepicker validate" placeholder="d/m/a" name="fechafinal">
+                  <label for="icon_telephone">Fecha final</label>
+                </div>
+                <div class="input-field col s4">
+                  <button class="btn waves-effect waves-light hide-on-small-only" type="submit" name="action">
+                    <i class="material-icons right">send</i>
+                  </button>
+                  <!-- boton movil-->
+                  <button class="btn waves-effect waves-light hide-on-med-and-up" type="submit" name="action" style="padding: 0 5px;left: 20px">
+                    <i class="material-icons right" style="margin-left: 0">send</i>
+                  </button>
+                </div>
+              </div>  
+            </form>
+            <br><br><br><br>
+               <h5 style="text-align: center;">fecha inicio: 1 abril 2018 fecha fin: 23 abril 2018</h5>
+            <table class="highlight">
+                    <thead>
+                      <tr>
+                          <th>Oración</th>
+                          <th>Total</th>
+                          
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>Oracion de 5 </td>
+                        <td>2</td>
+                        
+                      </tr>
+                      <tr>        
+                        <td>Oracion de 9</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Oracion de 12</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Oracion de 6</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Consagaración de Grupo</td>
+                        <td>2</td>
+                      </tr>
+                    
+                    <tr>
+                        
+                        <td>Consagaración de 8:30</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Dominicales</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Servicios</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Assitencias totales al mes</td>
+                        <td>18</td>
+                      </tr>
+                    </tbody>
+                  </table>         
+            </div> 
+          </div>
+        </div>
+      </main>            
+<footer class="page-footer indigo darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Contacto</h5>
+            <p class="grey-text text-lighten-4">Si tienes dudas o alguna necesidad en específico, contacta a tu encargado de grupo</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2017 LLDM
+          <span class="grey-text text-lighten-4 right">Hecho por  <a href="http://hackter.site/"><img src="images/hackter.png" alt="logo-footer"></a></span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+    <script type="text/javascript" src="js/validar.js"></script>
+    
+  </body>
+</html>

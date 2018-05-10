@@ -1,0 +1,56 @@
+<img class="circle img-collapsible" src="../../images/jovenes/sinfoto.jpg" alt="imagen joven">
+<span>Asareel Mata Guadarrama</span><br>
+<div class="input-field">
+    <p>¿Estudias?</p>
+    <input  class="with-gap" type="radio" name="est1" id="est4"  value="Si" />
+    <label for="est4">Si *</label>
+    <input  class="with-gap" type="radio" name="est1" id="est5"  value="No" />
+    <label for="est5">No *</label>
+  </div> <br>
+
+  <div id="siestudia" class="hide">
+    <div class="input-field">
+        <input placeholder="Carrera que estudias" name="estudios" id="estudios" type="text" class="validate">
+        <label for="estudios">Carrera que estudias</label>
+    </div>
+    <div class="input-field">
+      <input placeholder="Horarios de estudio" name="horariosest" id="horariosest" type="text" class="validate">
+      <label for="horariosest">Horarios de estudio</label>
+    </div>
+    <div class="input-field">
+      <input placeholder="Lugar donde estudias" name="lugarest" id="lugarest" type="text" class="validate">
+      <label for="lugarest">Lugar donde estudias</label>
+    </div>
+    <div class="input-field">
+      <input placeholder="Días que estudias" name="diasest" id="diasest" type="text" class="validate">
+      <label for="diasest">Días que estudias</label>
+    </div>
+  </div>
+
+  <div id="noestudia" class="hide">
+    <div class="input-field">
+      <input placeholder="Máximo grado de estudios" name="diasest1" id="diasest1" type="text" class="validate">
+      <label for="diasest1">Máximo grado de estudios</label>
+    </div>
+    <div class="input-field">
+      <input placeholder="Carrera que estudiaste (opcional)" name="estudios1" id="estudios1" type="text" class="validate">
+      <label for="estudios1">Carrera que estudiaste (opcional)</label>
+    </div>
+    <div class="input-field">
+      <input placeholder="Lugar donde estudiaste" name="lugarest1" id="lugarest1" type="text" class="validate">
+      <label for="lugarest1">Lugar donde estudiaste</label>
+    </div>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+        $('#est4').click(function() {
+          $('#noestudia').addClass('hide');
+          $('#siestudia').removeClass('hide');
+        });
+
+        $('#est5').click(function() {
+          $('#siestudia').addClass('hide');
+          $('#noestudia').removeClass('hide');
+        });
+     });
+  </script>

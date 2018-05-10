@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Asistencias</title>
+    <link rel='icon' href='../../images/logo.jpg' />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style media="screen">
+      main {
+        min-height: 100vh;
+        background-color: #eee;
+      }
+
+      h5 {
+        font-size: 22px;
+        margin: 1em 0;
+      }
+
+      .img-collapsible {
+        height: 30px;
+        position: relative;
+        top: 8px;
+        margin-right: 8px;
+      }
+
+      .card {
+        padding: 1.4em 2.4em;
+        margin-bottom: 0;
+      }
+
+      .input-field {
+        margin: 0;
+      }
+    </style>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+
+    <header>
+      <nav class="nav-extended indigo darken-4">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center hide-on-small-only">4º Grupo de Jóvenes</a>
+          <a href="#" class="brand-logo center show-on-small hide-on-large-only">4º de Jóvenes</a>
+          <a href="panelEnc.html" class="left" style="margin-left: 18px"><i class="material-icons">arrow_back</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="logEncargado.html">Salir</a></li>
+          </ul>          
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="fixed-action-btn horizontal">
+        <a href="altaJov.html" class="btn-floating btn-large cyan accent-4">
+          <i class="large material-icons">add</i>
+        </a>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="row">         
+            <div class="col s12 m4 l3 center-my-son">
+              <img class="circle main-avatar" src="../../images/jovenes/sinfoto.jpg" alt="">
+            </div>
+            <div class="col s12 m8 l9">
+              <div class="center-my-son hide-on-med-and-up">
+                <h4 style="font-size: 27px;">Asareel Mata Guadarrama</h4>
+                <p>4º Grupo de Jóvenes</p>
+                <p><b>Asistencias en este mes: </b>12</p>
+                <p><b>Correo Electrónico:</b> asareelmataguadarrama@gmail.com</p>
+                <p><b>Teléfono:</b> 3312986745</p>
+                <p><b>Edad:</b> 21</p>
+                <p><b>Domicilio:</b> Calzada Dr. Samuel Joaquín #3337 Int. 1</p>
+                <a class="btn red" href="#">Eliminar</a>
+              </div>
+              <div class="hide-on-small-only ">
+                <h4>Asareel Mata Guadarrama</h4>
+                <p>4º Grupo de Jóvenes</p>
+                <div class="left-align">
+                  <p><b>Asistencias en este mes: </b>12</p>
+                  <p><b>Correo Electrónico:</b> asareelmataguadarrama@gmail.com</p>
+                  <p><b>Teléfono:</b> 3312986745</p>
+                  <p><b>Edad:</b> 21</p>
+                  <p><b>Domicilio:</b> Calzada Dr. Samuel Joaquín #3337 Int. 1</p>
+                  <a class="btn red" href="#">Eliminar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <div class="container">
+        <div class="card">
+          <div class="row">
+          <h3>Buscar asistencias  por fecha </h3>
+          
+            <form>
+              <div class="row">
+                <div class="input-field col s4">
+                  <i class="material-icons prefix">event</i>
+                  <input id="icon_prefix" type="text" class="datepicker validate" placeholder="d/m/a" name="fechainicio">
+                  <label for="icon_prefix">Fecha inicio</label>
+                </div>
+                <div class="input-field col s4">
+                  <i class="material-icons prefix">date_range</i>
+                  <input id="icon_telephone" type="text" class="datepicker validate" placeholder="d/m/a" name="fechafinal">
+                  <label for="icon_telephone">Fecha final</label>
+                </div>
+                <div class="input-field col s4">
+                   <button class="btn waves-effect waves-light hide-on-small-only" type="submit" name="action">
+                    <i class="material-icons right">send</i>
+                  </button>
+                  <!-- boton movil-->
+                  <button class="btn waves-effect waves-light hide-on-med-and-up" type="submit" name="action" style="padding: 0 5px;left: 20px">
+                    <i class="material-icons right" style="margin-left: 0">send</i>
+                  </button>
+                </div>
+              </div>  
+            </form>        
+          </div>
+          <div class="container">
+            <div class="row">
+              <!-- paginacion para escritorio-->
+                <ul class="pagination hide-on-small-only center">
+                  <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                  <li class="waves-effect"><a href="#!">..</a></li>
+                  <li class="waves-effect"><a href="#!">Abril</a></li>
+                  <li class="waves-effect"><a href="#!">Mayo</a></li>
+                  <li class="waves-effect"><a href="#!">Junio</a></li>
+                  <li class="active"><a href="#!">Julio</a></li>
+                  <li class="waves-effect"><a href="#!">Agosto</a></li>
+                  <li class="waves-effect"><a href="#!">..</a></li>
+                  <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+                <!-- paginacion para movil-->
+                <ul class="pagination show-on-small hide-on-large-only center">
+                  <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                  <li class="waves-effect"><a href="#!">..</a></li>
+                  <li class="active"><a href="#!">Julio</a></li>
+                  <li class="waves-effect"><a href="#!">..</a></li>
+                  <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            <table class="highlight">
+                    <thead>
+                      <tr>
+                          <th>Oración</th>
+                          <th>Total</th>
+                          
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>Oracion de 5 </td>
+                        <td>2</td>
+                        
+                      </tr>
+                      <tr>        
+                        <td>Oracion de 9</td>
+                        <td >2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Oracion de 12</td>
+                        <td >2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Oracion de 6</td>
+                        <td >2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Consagaración de Grupo</td>
+                        <td >2</td>
+                      </tr>
+                    
+                    <tr>
+                        
+                        <td>Consagaración de 8:30</td>
+                        <td >2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Dominicales</td>
+                        <td >2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Servicios</td>
+                        <td >2</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>Assitencias totales al mes</td>
+                        <td>16</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+  </body>
+</html>
